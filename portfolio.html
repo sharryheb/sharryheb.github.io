@@ -1,62 +1,272 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Sharry Heberer</title>
-        <link href="./assets/css/style.css" rel="stylesheet">
-    </head>
-
-    <body>
-        <header>
-            <h1 class="myName">Sharry Heberer</h1>
-            <nav><a href="index.html">About</a> | <a href="portfolio.html">Portfolio</a> | <a href="contact.html">Contact</a></nav>
-            <div class="spacer"></div>
-        </header>
-        <div class="spacer"></div>
-        <main>
-            <h1 class="pageTitle">Portfolio</h1>
-            <hr><br>
-
-            <div class="portfolioItem">
-                <a href="https://sharryheb.github.io/Hangman/">
-                    <img src="assets/images/hangman.jpg" class="portfolioImage">
-                    <div class="portfolioBanner"><span>Hangman</span></div>
-                </a>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sharry Heberer - Portfolio</title>
+<!--
+Next Level CSS Template
+https://templatemo.com/tm-532-next-level
+-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row tm-brand-row">
+        <div class="col-lg-4 col-10">
+          <div class="tm-brand-container">
+            <div class="tm-brand-texts">
+              <h1 class="text-uppercase tm-brand-name">Sharry Heberer</h1>
             </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-2 tm-nav-col">
+          <div class="tm-nav">
+            <nav class="navbar navbar-expand-lg navbar-light tm-navbar">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto mr-0">
+                  <li class="nav-item">
+                    <div class="tm-nav-link-highlight"></div>
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item active">
+                    <div class="tm-nav-link-highlight"></div>
+                    <a class="nav-link" href="portfolio.html">
+                      Portfolio <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="tm-nav-link-highlight"></div>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
 
-            <div class="portfolioItem">
-                <a href="https://sharryheb.github.io/unit-4-game/">
-                    <img src="assets/images/dice.jpg" class="portfolioImage" style="border: 1px solid #4aaaa5">
-                    <div class="portfolioBanner"><span>RPG Game</span></div>
-                </a>
+      <div class="row tm-welcome-row">
+        <div class="col-12">
+          <div
+            class="tm-welcome-parallax tm-center-child"
+            data-parallax="scroll"
+            data-image-src="img/portfoliobg.jpg"
+          >
+            <div class="tm-bg-black-transparent tm-parallax-overlay">
+              <h2>My Portfolio</h2>
+              <p></p>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <div class="portfolioItem">
-                <a href="https://sharryheb.github.io/TriviaGame/">
-                    <img src="assets/images/trivia.jpg" class="portfolioImage">
-                    <div class="portfolioBanner"><span>Trivia Game</span></div>
+      <section class="row tm-pt-4">
+        <div class="col-12 tm-page-cols-container">
+          <div class="tm-page-col-left">
+            <ul class="tabs clearfix filters-button-group">
+              <li>
+                <a href="#" class="active" data-filter=".category-1">
+                  <div class="tm-tab-icon"></div>
+                  All Projects
                 </a>
-            </div>
-
-            <div class="portfolioItem">
-                <a href="https://sharryheb.github.io/GiphTastic/">
-                    <img src="assets/images/giphylogo.png" class="portfolioImage">
-                    <div class="portfolioBanner"><span>Giphy API Search</span></div>
+              </li>
+              <li>
+                <a href="#" class="" data-filter=".category-1">
+                  <div class="tm-tab-icon"></div>
+                  Front End Projects
                 </a>
-            </div>
-
-            <div class="portfolioItem">
-                <a href="https://sharryheb.github.io/RPS-Multiplayer/">
-                    <img src="assets/images/rockspock.jpg" class="portfolioImage">
-                    <div class="portfolioBanner"><span>Rock Paper Scissors Lizard Spock</span></div>
+              </li>
+              <li>
+                <a href="#" class="" data-filter=".category-2">
+                  <div class="tm-tab-icon"></div>
+                  Back End Projects
                 </a>
+              </li>
+              <li>
+                <a href="#" class="" data-filter=".category-3">
+                  <div class="tm-tab-icon"></div>
+                  Full Stack Projects
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tm-page-col-right">
+            <div class="tm-gallery" id="tmGallery">
+              <div class="tm-gallery-item category-1">
+                <figure class="effect-bubba">
+                  <img
+                    src="img/gallery/Hankman.png"
+                    alt="Gallery item"
+                    class="img-fluid"
+                  />
+                  <figcaption>
+                    <p>A Tom Hanks spin on Hangman</p>
+                    <a href="https://sharryheb.github.io/Hangman/">View more</a>
+                  </figcaption>
+                </figure>
+                <p class="text-center"><a href="https://github.com/sharryheb/Hangman">GitHub Repository</a></p>
+              </div>
+              <div class="tm-gallery-item category-1">
+                <figure class="effect-bubba">
+                  <img
+                    src="img/gallery/TriviaGame.png"
+                    alt="Gallery item"
+                    class="img-fluid"
+                  />
+                  <figcaption>
+                    <p>Simple static trivia game</p>
+                    <a href="https://sharryheb.github.io/TriviaGame/">View more</a>
+                  </figcaption>
+                </figure>
+                <p class="text-center"><a href="https://github.com/sharryheb/TriviaGame">GitHub Repository</a></p>
+              </div>
+              <div class="tm-gallery-item category-1">
+                <figure class="effect-bubba">
+                  <img
+                    src="img/gallery/RPG-game.png"
+                    alt="Gallery item"
+                    class="img-fluid"
+                  />
+                  <figcaption>
+                    <p>RPG game with a Friends tv show twist</p>
+                    <a href="https://sharryheb.github.io/unit-4-game/">View more</a>
+                  </figcaption>
+                </figure>
+                <p class="text-center"><a href="https://github.com/sharryheb/unit-4-game/">GitHub Repository</a></p>
+              </div>
+              <div class="tm-gallery-item category-1">
+                <figure class="effect-bubba">
+                  <img
+                    src="img/gallery/Giphy.png"
+                    alt="Gallery item"
+                    class="img-fluid"
+                  />
+                  <figcaption>
+                    <p>Giphy searches @ push of a button</p>
+                    <a href="https://sharryheb.github.io/GiphTastic/">View more</a>
+                  </figcaption>
+                </figure>
+                <p class="text-center"><a href="https://github.com/sharryheb/GiphTastic">GitHub Repository</a></p>
+              </div>
+              <div class="tm-gallery-item category-1">
+                <figure class="effect-bubba">
+                  <img
+                    src="img/gallery/RPSLS.png"
+                    alt="Gallery item"
+                    class="img-fluid"
+                  />
+                  <figcaption>
+                    <p>Play RPSLS against another player</p>
+                    <a href="https://sharryheb.github.io/RPS-Multiplayer/">View more</a>
+                  </figcaption>
+                </figure>
+                <p class="text-center"><a href="https://github.com/sharryheb/RPS-Multiplayer">GitHub Repository</a></p>
+              </div>
+              <div class="tm-gallery-item category-2">
+                <figure class="effect-bubba">
+                  <img
+                    src="img/gallery/coming-soon.jpg"
+                    alt="Gallery item"
+                    class="img-fluid"
+                  />
+                  <figcaption>
+                    <p>Stay tuned for more projects!</p>
+                    <a href="#">View more</a>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="tm-gallery-item category-3">
+                <figure class="effect-bubba">
+                  <img
+                    src="img/gallery/coming-soon.jpg"
+                    alt="Gallery item"
+                    class="img-fluid"
+                  />
+                  <figcaption>
+                    <p>Stay tuned for more projects!</p>
+                    <a href="#">View more</a>
+                  </figcaption>
+                </figure>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="spacer"></div>
-        </main>
-        
-        <footer>
-            <hr id="footerRule">
-            <div id="footerText">Copyright &copy;</div>
-        </footer>
-    </body>
+      <!-- Page footer -->
+      <footer class="row tm-page-footer">
+        <p class="col-12 tm-copyright-text mb-0">
+          Copyright &copy; 2019 Designed by Template Mo
+        </p>
+      </footer>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(function() {
+        /* Isotope Gallery */
+
+        // init isotope
+        var $gallery = $(".tm-gallery").isotope({
+          itemSelector: ".tm-gallery-item",
+          layoutMode: "fitRows"
+        });
+        // layout Isotope after each image loads
+        $gallery.imagesLoaded().progress(function() {
+          $gallery.isotope("layout");
+        });
+
+        $(".filters-button-group").on("click", "a", function() {
+          var filterValue = $(this).attr("data-filter");
+          $gallery.isotope({ filter: filterValue });
+          console.log("Filter value: " + filterValue);
+        });
+
+        /* Tabs */
+        $(".tabgroup > div").hide();
+        $(".tabgroup > div:first-of-type").show();
+        $(".tabs a").click(function(e) {
+          e.preventDefault();
+          var $this = $(this),
+            tabgroup = "#" + $this.parents(".tabs").data("tabgroup"),
+            others = $this
+              .closest("li")
+              .siblings()
+              .children("a"),
+            target = $this.attr("href");
+          others.removeClass("active");
+          $this.addClass("active");
+
+          // Scroll to tab content (for mobile)
+          if ($(window).width() < 992) {
+            $("html, body").animate(
+              {
+                scrollTop: $("#tmGallery").offset().top
+              },
+              200
+            );
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
